@@ -1,5 +1,4 @@
 import http from 'http';
-
 const server = http.createServer((req,res) => {
     const url = req.url;
     if (url == "/") {
@@ -16,7 +15,6 @@ const server = http.createServer((req,res) => {
     }
     res.end();
 });
-
 server.listen(4001, () => {
-    console.log("Server is running!")
+    console.log("Server is running successfully!")
 })
